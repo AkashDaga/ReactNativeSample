@@ -1,0 +1,50 @@
+{
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "randomcolor": "^0.5.3",
+    "react": "16.5.0",
+    "react-native": "^0.56.1",
+    "react-native-autocomplete-input": "^3.6.0",
+    "react-native-collapsible-toolbar": "^0.1.2",
+    "react-native-config": "^0.11.5",
+    "react-native-device-info": "^0.22.5",
+    "react-native-indicators": "^0.13.0",
+    "react-native-keyboard-aware-scroll-view": "^0.8.0",
+    "react-native-modal": "^6.5.0",
+    "react-native-restart": "^0.0.9",
+    "react-native-snackbar": "^0.5.1",
+    "react-native-splash-screen": "^3.1.1",
+    "react-native-vector-icons": "^5.0.0",
+    "react-navigation": "^2.13.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "23.6.0",
+    "babel-preset-react-native": "5.0.2",
+    "eslint": "^4.19.1",
+    "eslint-config-rallycoding": "^3.2.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-native": "^3.3.0",
+    "jest": "23.6.0",
+    "prettier-eslint": "^8.8.2",
+    "react-test-renderer": "16.4.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "rnpm": {
+    "ios": {
+      "ignorePodSpec": true
+    },
+    "assets": [
+      "assets/fonts"
+    ]
+  }
+}
