@@ -1,1 +1,1 @@
-export const UPDATE_FILTER = 'update_filter';
+export const UPDATE_SAVED_PHOTO = 'update_saved_photo';

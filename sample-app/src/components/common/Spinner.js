@@ -32,6 +32,7 @@ const SpinnerWithLabel = ({ label, style }) => {
 const styles = {
   containerStyle: {
     backgroundColor: theme.TRANSPARENT,
+    flexDirection: 'row',
     flex: 1,
     padding: 5,
     alignItems: 'center',

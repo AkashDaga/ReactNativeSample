@@ -1,16 +1,16 @@
-import { UPDATE_FILTER } from '../actions/types';
+import { UPDATE_SAVED_PHOTO } from '../actions/types';
 
 const INITIAL_STATE = {
-  filter: {}
+  initialCount: 0
 };
 
 export default (state = INITIAL_STATE, action) => {
   console.log('AppReduxReducer', state, action);
   switch (action.type) {
-    case UPDATE_FILTER: {
+    case UPDATE_SAVED_PHOTO: {
       return {
         ...state,
-        filter: JSON.parse(JSON.stringify(action.payload))
+        initialCount: state.initialCount+1
       };
     }
     default: {

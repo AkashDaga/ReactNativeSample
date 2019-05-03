@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { createMaterialTopTabNavigator } from 'react-navigation';
 import { View, Dimensions, Animated } from 'react-native';
-import SearchUser from './SearchUser';
-import AllCreditCardUserList from './AllCreditCardUserList';
+import UploadImage from './UploadImage';
+import UploadedImages from './UploadedImage';
 import theme from '../styles/themeStyle';
 
 const { height } = Dimensions.get('window');
@@ -10,16 +10,16 @@ const { height } = Dimensions.get('window');
 const getScreenList = () => {
   let screenList = {};
   screenList = {
-    ALL_CARD_LIST: {
-      screen: AllCreditCardUserList,
+    UPLOAD_IMAGE: {
+      screen: UploadImage,
       navigationOptions: {
-        tabBarLabel: 'All Credit Card Users'
+        tabBarLabel: 'Upload Image'
       }
     },
-    SEARCH_USER_DETAILS: {
-      screen: SearchUser,
+    UPLOADED_IMAGE: {
+      screen: UploadedImages,
       navigationOptions: {
-        tabBarLabel: 'Search User'
+        tabBarLabel: 'Uploaded Image'
       }
     }
   };
@@ -39,7 +39,7 @@ class DashboardTabs extends Component {
       getScreenList(),
       {
         animationEnabled: true,
-        initialRouteName: 'ALL_CARD_LIST',
+        initialRouteName: 'UPLOAD_IMAGE',
         swipeEnabled: true,
         tabBarOptions: {
           activeTintColor: theme.WHITE_COLOR,

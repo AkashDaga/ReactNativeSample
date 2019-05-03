@@ -1,9 +1,7 @@
-import { UPDATE_FILTER } from './types';
+import { UPDATE_SAVED_PHOTO } from './types';
 
-export const updateFilter = filter => {
-  console.log('updateFilter', filter);
+export const updateSavedPhoto = () => {
   return {
-    type: UPDATE_FILTER,
-    payload: filter
+    type: UPDATE_SAVED_PHOTO,
   };
 };
